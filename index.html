@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10152b">
+  <meta name="description" content="Plan social content, organise drafts and track channel performance with IMI Social Manager.">
+  <title>IMI Social Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="IMI Social Manager home">
+        <span class="brand-mark">IMI</span>
+        <span><strong>IMI</strong><small>SOCIAL MANAGER</small></span>
+      </a>
+      <div class="workspace-label">WORKSPACE</div>
+      <nav class="nav-menu" aria-label="Main navigation">
+        <button class="nav-link active" data-view="overview"><span>▦</span> Overview</button>
+        <button class="nav-link" data-view="planner"><span>▦</span> Content planner</button>
+        <button class="nav-link" data-view="posts"><span>▤</span> Posts</button>
+        <button class="nav-link" data-view="analytics"><span>⌁</span> Analytics</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card"><span class="help-icon">✦</span><strong>Make every post count.</strong><p>Plan consistently. Learn from your numbers. Grow with purpose.</p></div>
+        <div class="profile-mini"><div class="avatar">ID</div><div><strong>IMI DIGITAL HUB</strong><small>Workspace owner</small></div></div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Toggle menu">☰</button>
+        <div class="breadcrumb">Workspace <span>/</span> <strong id="pageName">Overview</strong></div>
+        <div class="topbar-right"><span class="status-dot"></span><span class="saved-label" id="savedLabel">Your workspace</span><button class="avatar top-avatar" title="IMI DIGITAL HUB">ID</button></div>
+      </header>
+
+      <section class="view active" id="overviewView">
+        <div class="welcome-row"><div><p class="eyebrow">YOUR SOCIAL MEDIA WORKSPACE</p><h1>Good to see you. <span>👋</span></h1><p class="muted">Here’s what’s happening across your social channels.</p></div><button class="primary-btn" data-action="new-post">＋ Create a post</button></div>
+        <div class="notice"><span>ⓘ</span><div><strong>Demo workspace</strong><p>These are sample figures to help you explore the dashboard. Replace them with your real platform metrics in Analytics.</p></div><button class="notice-close" aria-label="Dismiss notice">×</button></div>
+        <div class="section-heading"><div><h2>Performance snapshot</h2><p class="muted">Sample data · Last 30 days</p></div><button class="text-btn" data-view-link="analytics">View analytics →</button></div>
+        <div class="metrics-grid">
+          <article class="metric-card"><div class="metric-top"><span>Total followers</span><span class="metric-icon purple">♙</span></div><strong>12,840</strong><small class="positive">↗ 8.4% <span>vs. previous 30 days</span></small><div class="sparkline purple-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+          <article class="metric-card"><div class="metric-top"><span>Engagement rate</span><span class="metric-icon orange">♡</span></div><strong>4.82%</strong><small class="positive">↗ 1.2% <span>vs. previous 30 days</span></small><div class="sparkline orange-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+          <article class="metric-card"><div class="metric-top"><span>Total reach</span><span class="metric-icon blue">◉</span></div><strong>86.2K</strong><small class="positive">↗ 12.6% <span>vs. previous 30 days</span></small><div class="sparkline blue-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+          <article class="metric-card"><div class="metric-top"><span>Published posts</span><span class="metric-icon green">▤</span></div><strong id="publishedCount">24</strong><small class="neutral">This month <span>across your channels</span></small><div class="sparkline green-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+        </div>
+        <div class="content-grid">
+          <article class="panel chart-panel"><div class="panel-heading"><div><h2>Audience growth</h2><p class="muted">Illustrative follower trend</p></div><span class="chart-legend"><i></i> Followers</span></div><div class="chart-wrap"><div class="y-labels"><span>15k</span><span>10k</span><span>5k</span><span>0</span></div><svg class="growth-chart" viewBox="0 0 620 210" preserveAspectRatio="none" role="img" aria-label="Illustrative upward audience growth chart"><defs><linearGradient id="areaFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#7868ef" stop-opacity=".22"/><stop offset="100%" stop-color="#7868ef" stop-opacity="0"/></linearGradient></defs><path d="M0 178 C35 170 45 160 75 166 S120 142 150 148 S195 125 225 137 S270 105 300 119 S345 91 375 101 S420 68 450 83 S495 58 525 65 S575 30 620 24 L620 210 L0 210Z" fill="url(#areaFill)"/><path d="M0 178 C35 170 45 160 75 166 S120 142 150 148 S195 125 225 137 S270 105 300 119 S345 91 375 101 S420 68 450 83 S495 58 525 65 S575 30 620 24" fill="none" stroke="#7868ef" stroke-width="3" stroke-linecap="round"/></svg></div><div class="x-labels"><span>Oct 20</span><span>Oct 27</span><span>Nov 3</span><span>Nov 10</span><span>Nov 17</span></div></article>
+          <article class="panel channel-panel"><div class="panel-heading"><div><h2>Channels</h2><p class="muted">Sample audience by platform</p></div><button class="icon-btn" title="Channel information">•••</button></div><div class="channel-row"><span class="platform-icon instagram">◎</span><div class="channel-info"><strong>Instagram</strong><small>Connected in demo</small></div><b>6,420</b></div><div class="channel-row"><span class="platform-icon facebook">f</span><div class="channel-info"><strong>Facebook</strong><small>Connected in demo</small></div><b>4,180</b></div><div class="channel-row"><span class="platform-icon linkedin">in</span><div class="channel-info"><strong>LinkedIn</strong><small>Connected in demo</small></div><b>2,240</b></div><p class="footnote">Sample values only. No accounts are connected.</p></article>
+        </div>
+        <div class="section-heading lower-heading"><div><h2>Upcoming content</h2><p class="muted">What’s next in your planner</p></div><button class="text-btn" data-view-link="planner">Open planner →</button></div>
+        <div class="panel upcoming-list" id="upcomingList"></div>
+      </section>
+
+      <section class="view" id="plannerView">
+        <div class="welcome-row"><div><p class="eyebrow">STAY CONSISTENT</p><h1>Content planner</h1><p class="muted">Organise ideas and keep your publishing schedule moving.</p></div><button class="primary-btn" data-action="new-post">＋ Add content</button></div>
+        <div class="panel planner-panel"><div class="planner-toolbar"><div><h2 id="plannerMonth">November 2026</h2><p class="muted">Your scheduled content</p></div><div class="toolbar-actions"><button class="secondary-btn" id="prevMonth" aria-label="Previous month">‹</button><button class="secondary-btn" id="todayBtn">Today</button><button class="secondary-btn" id="nextMonth" aria-label="Next month">›</button></div></div><div class="calendar-grid" id="calendarGrid"></div></div>
+      </section>
+
+      <section class="view" id="postsView">
+        <div class="welcome-row"><div><p class="eyebrow">YOUR CONTENT LIBRARY</p><h1>Posts</h1><p class="muted">Draft, organise and review your social content.</p></div><button class="primary-btn" data-action="new-post">＋ Create a post</button></div>
+        <div class="panel posts-panel"><div class="posts-toolbar"><div class="filter-tabs"><button class="filter-tab active" data-filter="All">All posts</button><button class="filter-tab" data-filter="Draft">Drafts</button><button class="filter-tab" data-filter="Scheduled">Scheduled</button><button class="filter-tab" data-filter="Published">Published</button></div><input id="postSearch" class="search-input" type="search" placeholder="Search posts…" aria-label="Search posts"></div><div class="post-list" id="postList"></div></div>
+      </section>
+
+      <section class="view" id="analyticsView">
+        <div class="welcome-row"><div><p class="eyebrow">MEASURE WHAT MATTERS</p><h1>Analytics</h1><p class="muted">Track your results and understand what resonates.</p></div><button class="secondary-btn" id="exportMetrics">↓ Export metrics CSV</button></div>
+        <div class="notice"><span>ⓘ</span><div><strong>Bring your own numbers</strong><p>Live analytics are not connected in this MVP. Add your platform figures below to keep a simple record and compare performance over time.</p></div></div>
+        <div class="metrics-grid compact-metrics"><article class="metric-card"><div class="metric-top"><span>Followers</span><span class="metric-icon purple">♙</span></div><strong id="analyticsFollowers">12,840</strong><small class="neutral">Latest recorded total</small></article><article class="metric-card"><div class="metric-top"><span>Reach</span><span class="metric-icon blue">◉</span></div><strong id="analyticsReach">86,200</strong><small class="neutral">Latest recorded total</small></article><article class="metric-card"><div class="metric-top"><span>Engagement rate</span><span class="metric-icon orange">♡</span></div><strong id="analyticsEngagement">4.82%</strong><small class="neutral">Latest recorded rate</small></article><article class="metric-card"><div class="metric-top"><span>Profile visits</span><span class="metric-icon green">↗</span></div><strong id="analyticsVisits">3,610</strong><small class="neutral">Latest recorded total</small></article></div>
+        <div class="panel metrics-form-panel"><div class="panel-heading"><div><h2>Record a performance snapshot</h2><p class="muted">Save a dated set of metrics in this browser.</p></div></div><form id="metricsForm" class="metrics-form"><label>Platform<select name="platform"><option>Instagram</option><option>Facebook</option><option>LinkedIn</option><option>TikTok</option><option>YouTube</option><option>Other</option></select></label><label>Date<input type="date" name="date" required></label><label>Followers<input type="number" name="followers" min="0" placeholder="e.g. 6500" required></label><label>Reach<input type="number" name="reach" min="0" placeholder="e.g. 12000" required></label><label>Engagement rate (%)<input type="number" name="engagement" min="0" max="100" step=".01" placeholder="e.g. 4.5" required></label><label>Profile visits<input type="number" name="visits" min="0" placeholder="e.g. 900" required></label><button class="primary-btn" type="submit">Save snapshot</button></form><div id="snapshotMessage" class="form-message" aria-live="polite"></div></div>
+        <div class="panel history-panel"><div class="panel-heading"><div><h2>Recorded snapshots</h2><p class="muted">Your saved performance history</p></div></div><div id="snapshotHistory" class="snapshot-history"></div></div>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="postDialog" class="post-dialog"><form id="postForm" method="dialog"><div class="dialog-heading"><div><p class="eyebrow">CONTENT WORKSPACE</p><h2 id="dialogTitle">Create a post</h2></div><button type="button" class="dialog-close" id="closeDialog" aria-label="Close">×</button></div><input type="hidden" name="id"><label>Post title<input name="title" maxlength="90" placeholder="Give your post a clear title" required></label><label>Caption / content<textarea name="caption" rows="5" maxlength="2000" placeholder="Write your caption or content idea…" required></textarea></label><div class="form-two"><label>Platform<select name="platform"><option>Instagram</option><option>Facebook</option><option>LinkedIn</option><option>TikTok</option><option>YouTube</option><option>Other</option></select></label><label>Status<select name="status"><option>Draft</option><option>Scheduled</option><option>Published</option></select></label></div><label>Publish date<input type="date" name="date"></label><div class="dialog-actions"><button type="button" class="secondary-btn" id="cancelDialog">Cancel</button><button class="primary-btn" type="submit">Save post</button></div></form></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
